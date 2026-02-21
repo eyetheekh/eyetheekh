@@ -67,5 +67,3 @@ building, experimenting, breaking, debugging, fixing, and eventually learning to
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" height="45"/>
 
 </p>
-
-
