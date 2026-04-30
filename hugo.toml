@@ -1,8 +1,41 @@
-baseURL = 'https://eyetheekh.pages.dev'
-locale = 'en-us'
-title = 'Eyetheekh S P'
-theme = 'hugo-trainsh'
+baseURL = "https://eyetheekh.pages.dev/"
+title = "Eyetheekh S P"
+theme = "hugo-trainsh"
 
+# --- language ---
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    languageCode = "en-US"
+    languageName = "English"
+    weight = 1
+    title = "Eyetheekh S P"
+    contentDir = "content/en"
+
+    [[languages.en.menu.main]]
+      name = "Home"
+      pageRef = "/"
+      weight = 10
+
+    [[languages.en.menu.main]]
+      name = "Blog"
+      pageRef = "/blog"
+      weight = 20
+
+    [[languages.en.menu.main]]
+      name = "Projects"
+      pageRef = "/projects"
+      weight = 30
+
+    [[languages.en.menu.main]]
+      name = "About"
+      pageRef = "/about"
+      weight = 40
+
+
+# --- theme params ---
 [params]
   mainSections = ["posts"]
   description = "Backend Engineer | Python"
@@ -16,28 +49,18 @@ theme = 'hugo-trainsh'
     linkedin = "https://linkedin.com/in/eyetheekh"
     email = "eyetheekhsp@gmail.com"
 
+# --- outputs (required for search index) ---
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-[menu]
-  [[menu.main]]
-    name = 'Home'
-    url = '/'
-    weight = 10
-  [[menu.main]]
-    name = 'Blog'
-    url = '/blog/'
-    weight = 20
-  [[menu.main]]
-    name = 'Projects'
-    url = '/projects/'
-    weight = 30
-  [[menu.main]]
-    name = 'About'
-    url = '/about/'
-    weight = 40
+
+# --- URL normalization ---
+disablePathToLower = false
+removePathAccents = true
+preserveTaxonomyNames = false
 
 
+# --- markup ---
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -49,4 +72,3 @@ theme = 'hugo-trainsh'
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['$$', '$$'], ['\\[', '\\]']]
           inline = [['$', '$'], ['\\(', '\\)']]
-
