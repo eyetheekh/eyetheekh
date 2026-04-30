@@ -1,0 +1,3 @@
+{{ $date := .date }}
+{{ if not $date }}{{ $date = .page.Date }}{{ end }}
+{{ return (time.Format (default "January 2, 2006" .format) $date) }}

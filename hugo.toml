@@ -1,11 +1,11 @@
 baseURL = 'https://eyetheekh.pages.dev'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Eyetheekh S P'
 theme = 'hugo-trainsh'
 
 [params]
   mainSections = ["posts"]
-  description = "Backend Engineer | Python "
+  description = "Backend Engineer | Python"
   author = "EYETHEEKH S P"
 
   defaultColorScheme = "retro"
