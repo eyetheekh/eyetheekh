@@ -1,0 +1,52 @@
+baseURL = 'https://eyetheekh.pages.dev'
+languageCode = 'en-us'
+title = 'Eyetheekh S P'
+theme = 'hugo-trainsh'
+
+[params]
+  mainSections = ["posts"]
+  description = "Backend Engineer | Python "
+  author = "EYETHEEKH S P"
+
+  defaultColorScheme = "retro"
+
+  # Footer social links
+  [params.social]
+    github = "https://github.com/eyetheekh"
+    linkedin = "https://linkedin.com/in/eyetheekh"
+    email = "eyetheekhsp@gmail.com"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'Blog'
+    url = '/blog/'
+    weight = 20
+  [[menu.main]]
+    name = 'Projects'
+    url = '/projects/'
+    weight = 30
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 40
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\\[', '\\]']]
+          inline = [['$', '$'], ['\\(', '\\)']]
+
