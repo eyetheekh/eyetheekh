@@ -11,7 +11,7 @@ title: "About Me"
 
 ### I learn by doing: building, breaking, fixing, and improving along the way. Occasionally, while trying out tools, i run into bugs in open source and contribute where i can.
 
-### When i’m not coding, i’m usually tuning my setup or reading newsletters. I’m interested in the how and why — how systems work beneath abstractions, and why they’re designed the way they are.
+### When i’m not coding, i’m usually tuning my setup or reading newsletters. I’m interested in the how and the why — how systems work beneath abstractions, and why they’re designed the way they are.
 
 ---
 
