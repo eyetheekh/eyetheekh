@@ -77,3 +77,8 @@ preserveTaxonomyNames = false
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['$$', '$$'], ['\\[', '\\]']]
           inline = [['$', '$'], ['\\(', '\\)']]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
